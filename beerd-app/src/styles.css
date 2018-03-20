@@ -1,1 +1,163 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'fonts.css';
+
+/* --- GENERAL STYLES --- */
+* {
+  font-family: 'OpenSansRegular', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-family: 'OpenSansSemiBold';
+  font-size: 44px;
+}
+
+h2 {
+  font-family: 'Andada', serif;
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 32px;
+  margin-bottom: 0.3rem;
+}
+
+.h3-sub {
+  font-family: 'OpenSansLight';
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.grey-bg {
+  background-color: #f5f5f5;
+}
+
+
+/* --- HEADER --- */
+.header {
+  background-size: 100%;
+  background-position: center center;
+  background-image: url("./assets/img/hero@2x-min.jpg");
+}
+
+.header h1 {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .header {
+    background-image: url("./assets/img/hero@2x-small-min.jpg");
+    background-position: top center;
+    background-size: 70%;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    background-size: 100%;
+  }
+}
+
+/* --- NAVBAR --- */
+
+.navbar-beerd {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* --- BUTTONS --- */
+.btn-beerd {
+  font-size: 12px;
+  font-family: 'OpenSansSemiBold';
+  padding: 0.54rem 1.92rem;
+  border-radius: 5.25rem;
+  border: none;
+}
+
+.input-beerd {
+  background-color: #efefef;
+  border: 1px solid hsla(0, 0%, 90%, 1);
+  padding: 0.45rem 0.8rem;
+  font-size: 15px;
+}
+
+.input-beerd:focus {
+  background-color: #efefef;
+}
+
+.btn-beerd.blue {
+  background-color: #1A77BA;
+}
+
+.btn-beerd.red {
+  background-color: #EF5935;
+}
+
+
+
+/* --- FORM --- */
+.label-beerd {
+  font-family: 'OpenSansBold';
+  font-size: 14px;
+  margin-bottom: .2rem;
+}
+.select-box {
+  background-color: #efefef;
+  border-radius: 3px;
+}
+
+.select-box select{
+  background:url("./assets/img/arrow-down.png") no-repeat;
+  background-position: 98% center;
+  background-size: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-box select::-ms-expand {
+  display: none;
+}
+
+
+/* --- TILES --- */
+.tile {
+  text-align: center;
+}
+
+.tile-icon {
+  height: 80px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.tile-heading {
+  font-family: 'OpenSansSemiBold';
+  font-size: 18px;
+}
+
+.tile-text {
+  font-family: 'OpenSansLight';
+}
+
+/* --- FOOTER --- */
+.dark-bg {
+  background-color: #404040;
+}
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 13px;
+}
+
+footer p {
+  color: #d1d1d1;
+}
+
+footer p.muted {
+  color: #777;
+}
